@@ -1,0 +1,60 @@
+// Build an AXI Master interface controller with basic read/write operations. The interface includes control signals (start_write, start_read),
+// data paths (addr_in, data_in, data_out), status signals (busy, done), and standard AXI channels: write address (AW), write data (W), 
+// write response (B), read address (AR), and read data (R). Include a synchronous active-low reset. 
+// Ensure the Verilog code adheres to the following rules:
+// 1. The Verilog module must be fully synthesizable and ready for simulation.
+// 2. All `always` blocks for sequential logic must have a sensitivity list of the form `@(posedge clk or negedge rst_n)`.
+// 3. All `always` blocks for combinational logic must use `@*` in the sensitivity list.
+// 4. Use `begin` and `end` to wrap all multi-line blocks in `always` and `case` statements.
+// 5. Include complete and properly formatted input and output ports, and ensure compatibility with AXI protocols.
+
+
+
+module axi_master #(
+    parameter AXI_DATA_WIDTH = 32,
+    parameter AXI_ADDR_WIDTH = 32
+)(
+    input clk,
+    input rst_n,
+    
+    // Control Interface
+    input start_write,
+    input start_read,
+    input [AXI_ADDR_WIDTH-1:0] addr_in,
+    input [AXI_DATA_WIDTH-1:0] data_in,
+    output reg [AXI_DATA_WIDTH-1:0] data_out,
+    output reg busy,
+    output reg done,
+    
+    // AXI Write Address Channel
+    output reg [AXI_ADDR_WIDTH-1:0] m_axi_awaddr,
+    output reg [2:0] m_axi_awsize,
+    output reg [1:0] m_axi_awburst,
+    output reg m_axi_awvalid,
+    input m_axi_awready,
+    
+    // AXI Write Data Channel
+    output reg [AXI_DATA_WIDTH-1:0] m_axi_wdata,
+    output reg [AXI_DATA_WIDTH/8-1:0] m_axi_wstrb,
+    output reg m_axi_wlast,
+    output reg m_axi_wvalid,
+    input m_axi_wready,
+    
+    // AXI Write Response Channel
+    input [1:0] m_axi_bresp,
+    input m_axi_bvalid,
+    output reg m_axi_bready,
+    
+    // AXI Read Address Channel
+    output reg [AXI_ADDR_WIDTH-1:0] m_axi_araddr,
+    output reg [2:0] m_axi_arsize,
+    output reg [1:0] m_axi_arburst,
+    output reg m_axi_arvalid,
+    input m_axi_arready,
+    
+    // AXI Read Data Channel
+    input [AXI_DATA_WIDTH-1:0] m_axi_rdata,
+    input [1:0] m_axi_rresp,
+    input m_axi_rlast,
+    input m_axi_rvalid,
+    output reg m_axi_rready);
