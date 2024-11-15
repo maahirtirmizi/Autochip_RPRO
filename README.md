@@ -17,23 +17,23 @@
     venv\Scripts\activate 
  
 
-5)	Install the required python packages:
+4)	Install the required python packages:
    
     pip3 install -r requirements.txt 
  
  
-7)	Activate API Key:
+5)	Activate API Key:
    
-   set OPENAI_API_KEY = "your API key"
+    set OPENAI_API_KEY = "your API key"
 
   
-9)	Copy the design and testbench files from verilogeval_prompts_tbs directory and paste it in autochip_scripts directory.
+6)	Copy the design and testbench files from verilogeval_prompts_tbs directory and paste it in autochip_scripts directory.
      
   
-10)	Copy paths of both the files and paste it corresponding to ‘prompt’ and ‘testbench’ of config json respectively.  
+7)	Copy paths of both the files and paste it corresponding to ‘prompt’ and ‘testbench’ of config json respectively.  
  
  
-11)	Go in the autochip_scripts directory in command prompt and run generate_verilog.py to start a compilation and simulation cycle.  
+8)	Go in the autochip_scripts directory in command prompt and run generate_verilog.py to start a compilation and simulation cycle.  
   
  
  
