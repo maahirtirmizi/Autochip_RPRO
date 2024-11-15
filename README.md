@@ -6,29 +6,32 @@
 **Installation** 
 
 1) Clone the repository to your local machine:
+
    git clone https://github.com/maahirtirmizi/Autochip_RPRO.git
    
 
-2)	Set up a virtual environment (optional but recommended): 
+3)	Set up a virtual environment (optional but recommended):
+   
   python3 -m venv venv
+  
  venv\Scripts\activate 
  
 
-3)	Install the required python packages: 
+5)	Install the required python packages: 
 pip3 install -r requirements.txt 
  
  
-4)	Activate API Key: 
+6)	Activate API Key: 
  set OPENAI_API_KEY = "your API key"
 
   
-5)	Copy the design and testbench files from verilogeval_prompts_tbs directory and paste it in autochip_scripts directory.
+7)	Copy the design and testbench files from verilogeval_prompts_tbs directory and paste it in autochip_scripts directory.
      
   
-6)	Copy paths of both the files and paste it corresponding to ‘prompt’ and ‘testbench’ of config json respectively.  
+8)	Copy paths of both the files and paste it corresponding to ‘prompt’ and ‘testbench’ of config json respectively.  
  
  
-7)	Go in the autochip_scripts directory in command prompt and run generate_verilog.py to start a compilation and simulation cycle.  
+9)	Go in the autochip_scripts directory in command prompt and run generate_verilog.py to start a compilation and simulation cycle.  
   
  
  
