@@ -1,0 +1,7 @@
+openai
+anthropic
+google-generativeai
+transformers
+torch
+mistralai
+tiktoken
