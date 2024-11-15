@@ -9,7 +9,9 @@
    git clone https://github.com/maahirtirmizi/Autochip_RPRO.git
    
 
-2)	Set up a virtual environment (optional but recommended): python3 -m venv venv venv\Scripts\activate 
+2)	Set up a virtual environment (optional but recommended): 
+  python3 -m venv venv
+ venv\Scripts\activate 
  
 
 3)	Install the required python packages: 
