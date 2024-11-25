@@ -1,5 +1,3 @@
-
-
 # **AutoChip_RPRO Setup Guide**
 
 ## **Prerequisites**
@@ -60,6 +58,7 @@ Edit the `config.json` file in the `autochip_scripts` directory:
         "mixed-models": false,
         "simulator": "RivieraPRO"
     }
+  }
   ```
 
 ### 7. Navigate to AutoChip Scripts Directory
@@ -82,5 +81,16 @@ python generate_verilog.py
 
 ---
 
-## **Support**
-For further assistance or troubleshooting, please contact me at tirmizimaahir@gmail.com.
+## **10. Best Practices**
+- Always delete the `work` directory in the project root before replacing the design and testbench files to avoid errors during compilation or simulation.
+- Double-check the file paths in the `config.json` file for accuracy, ensuring forward slashes are used.
+- The more detailed and descriptive the design prompt is, the better the chances are for compilation and simulation to be successful in fewer iterations.
+
+---
+
+## **Support**  
+For further assistance or troubleshooting, feel free to reach out at:  
+📧 **Email**: tirmizimaahir@gmail.com  
+
+For Riviera Pro-related issues, consult the official documentation or contact Aldec support.
+
