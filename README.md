@@ -44,14 +44,22 @@ Edit the `config.json` file in the `autochip_scripts` directory:
 - Use **forward slashes** for all file paths.
 - Update the `"prompt"` field to the design file path.
 - Update the `"testbench"` field to the testbench file path.
-- Adjust the `"max_iterations"` field to control the number of iterations during the generation process. For example:
+- Adjust the `"iterations"` field to control the number of iterations during the generation process. It should look like this:
   ```json
   {
-    "prompt": "C:/path_to_file/design_file.sv",
-    "testbench": "C:/path_to_file/testbench_file.sv",
-    "max_iterations": 3,
-    ...
-  }
+    "general": {
+        "prompt": "C:/Users/tirmi/autochip_rpro/AutoChip/autochip_scripts/fsm_onehot.sv",
+        "name": "fsm_onehot.sv",
+        "testbench": "C:/Users/tirmi/autochip_rpro/AutoChip/autochip_scripts/fsm_onehot_tb.sv",
+        "model_family": "ChatGPT",
+        "model_id": "gpt-4",
+        "num_candidates": 2,
+        "iterations": 4,
+        "outdir": "test_outdir",
+        "log": "log.txt",
+        "mixed-models": false,
+        "simulator": "RivieraPRO"
+    }
   ```
 
 ### 7. Navigate to AutoChip Scripts Directory
