@@ -1,12 +1,12 @@
 {
     "general": {
-        "prompt": "C:/Users/tirmi/autochip_rpro/AutoChip/autochip_scripts/vector0.sv",
-        "name": "vector0",
-        "testbench": "C:/Users/tirmi/autochip_rpro/AutoChip/autochip_scripts/vector0_tb.sv",
+        "prompt": "C:/Users/tirmi/autochip_rpro/AutoChip/autochip_scripts/axilite_mem.sv",
+        "name": "axilite_mem.sv",
+        "testbench": "C:/Users/tirmi/autochip_rpro/AutoChip/autochip_scripts/axilite_mem_tb.sv",
         "model_family": "ChatGPT",
         "model_id": "gpt-4",
         "num_candidates": 2,
-        "iterations": 4,
+        "iterations": 7,
         "outdir": "test_outdir",
         "log": "log.txt",
         "mixed-models": false,
