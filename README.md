@@ -78,8 +78,4 @@ python generate_verilog.py
 ---
 
 ## **Support**
-For further assistance or troubleshooting, refer to the repository's documentation or contact the project maintainer.
-
----
-
-Would you like this formatted into a clean PDF document?
+For further assistance or troubleshooting, please contact me at tirmizimaahir@gmail.com.
