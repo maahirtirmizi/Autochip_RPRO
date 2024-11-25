@@ -4,9 +4,8 @@
 
 ## **Prerequisites**
 1. **Python**: Version 3.6 or newer installed on your system.
-2. **pip**: Installed for managing Python dependencies.
-3. **Riviera Pro**: Licensed installation required for simulations.
-4. **OpenAI API Key**: Necessary for generating Verilog code.
+2. **Riviera Pro**: Licensed installation required for simulations.
+3. **OpenAI API Key**: Necessary for generating Verilog code.
 
 ---
 
