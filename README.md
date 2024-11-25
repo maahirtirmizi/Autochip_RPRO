@@ -1,8 +1,6 @@
-Here's the revised content including step 9:
 
----
 
-# **AutoChip Setup Guide**
+# **AutoChip_RPRO Setup Guide**
 
 ## **Prerequisites**
 1. **Python**: Version 3.6 or newer installed on your system.
