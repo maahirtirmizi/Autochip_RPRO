@@ -41,9 +41,9 @@ Paste the appropriate **design** and **testbench** files into the `autochip_scri
 
 ### 6. Update Configuration File
 Edit the `config.json` file in the `autochip_scripts` directory:
-- Use **forward slashes** for all file paths.
 - Update the `"prompt"` field to the design file path.
 - Update the `"testbench"` field to the testbench file path.
+- Use **forward slashes** for all file paths.
 - Adjust the `"iterations"` field to control the number of iterations during the generation process. It should look like this:
   ```json
   {
