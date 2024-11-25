@@ -6,7 +6,7 @@
         "model_family": "ChatGPT",
         "model_id": "gpt-4",
         "num_candidates": 2,
-        "iterations": 7,
+        "iterations": 4,
         "outdir": "test_outdir",
         "log": "log.txt",
         "mixed-models": false,
